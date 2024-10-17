@@ -1,9 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://di0dhatboq3ns"]
+[gd_scene load_steps=5 format=3 uid="uid://di0dhatboq3ns"]
 
 [ext_resource type="PackedScene" uid="uid://1mrc3rmntp7v" path="res://Scene/Wall1.tscn" id="1_7oylr"]
+[ext_resource type="PackedScene" uid="uid://6cjmg2b4pqbd" path="res://Scene/Player.tscn" id="1_sb8hs"]
 [ext_resource type="PackedScene" uid="uid://dpa31v0aadbv8" path="res://Scene/Rock1.tscn" id="2_kna0g"]
+[ext_resource type="PackedScene" uid="uid://cgurdmsiyksr8" path="res://Scene/UI.tscn" id="4_8w41s"]
 
-[node name="Task1" type="Node2D"]
+[node name="Task2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_sb8hs")]
+position = Vector2(161, 574)
 
 [node name="MapWall" type="Node" parent="."]
 
@@ -259,3 +264,7 @@ position = Vector2(353, 305)
 
 [node name="Rock3" parent="Rock" instance=ExtResource("2_kna0g")]
 position = Vector2(1121, 633)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_8w41s")]

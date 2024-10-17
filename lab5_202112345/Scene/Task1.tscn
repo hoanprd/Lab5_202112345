@@ -1,13 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ds6wigvx4df41"]
+[gd_scene load_steps=3 format=3 uid="uid://ds6wigvx4df41"]
 
 [ext_resource type="PackedScene" uid="uid://1mrc3rmntp7v" path="res://Scene/Wall1.tscn" id="1_4rsel"]
-[ext_resource type="PackedScene" uid="uid://6cjmg2b4pqbd" path="res://Scene/Player.tscn" id="1_17lm6"]
 [ext_resource type="PackedScene" uid="uid://dpa31v0aadbv8" path="res://Scene/Rock1.tscn" id="3_l4ud2"]
 
 [node name="Task1" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("1_17lm6")]
-position = Vector2(162, 567)
 
 [node name="MapWall" type="Node" parent="."]
 

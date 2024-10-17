@@ -9,8 +9,20 @@ const GRAVITY = 900        # Gravity applied when the player is in the air
 var health = 100
 var points = 0
 
-# Variables to handle vertical velocity
+# Variable to handle vertical velocity
 var vertical_velocity = 0.0  # Vertical speed (gravity, jumping, falling)
+
+# Reference to UI labels
+var health_label: Label
+var points_label: Label
+
+func _ready():
+	# Get the UI labels from the scene
+	health_label = get_node("../CanvasLayer/UI/HealthLabel")
+	points_label = get_node("../CanvasLayer/UI/PointsLabel")
+
+	# Update the UI initially
+	update_ui()
 
 func _process(delta):
 	handle_movement(delta)
@@ -31,19 +43,36 @@ func handle_movement(delta):
 
 # Function to handle jumping, gravity, and falling
 func handle_gravity_and_jump(delta):
-	# Check if the player is on the floor using the `is_on_floor` property
 	if is_on_floor():
-		# If the player is on the floor and presses the jump button
-		if Input.is_action_just_pressed("ui_accept"):  # ui_accept mapped to Spacebar
-			vertical_velocity = JUMP_FORCE  # Apply upward force for jumping
+		if Input.is_action_just_pressed("ui_accept"):
+			vertical_velocity = JUMP_FORCE
 		else:
-			vertical_velocity = 0  # Reset vertical velocity to 0 if grounded and not jumping
+			vertical_velocity = 0
 	else:
-		# If the player is in the air, apply gravity
 		vertical_velocity += GRAVITY * delta
 
-	# Apply vertical movement to the velocity
+	# Update the vertical component of the velocity
 	velocity.y = vertical_velocity
-	
-	# Move the player using the velocity vector (horizontal + vertical)
-	move_and_slide()  # Just call move_and_slide() without arguments
+
+	# Move the player using the velocity vector
+	move_and_slide()  # Call this without parameters
+
+	# Update the UI after movement
+	update_ui()
+
+# Function to update the UI
+func update_ui():
+	health_label.text = "Health: " + str(health)
+	points_label.text = "Points: " + str(points)
+
+# Function to simulate taking damage
+func take_damage(amount):
+	health -= amount
+	if health < 0:
+		health = 0  # Prevent health from going negative
+	update_ui()  # Update UI after taking damage
+
+# Function to simulate collecting points
+func collect_points(amount):
+	points += amount
+	update_ui()  # Update UI after collecting points
