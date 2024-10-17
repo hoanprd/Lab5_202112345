@@ -1,0 +1,261 @@
+[gd_scene load_steps=3 format=3 uid="uid://di0dhatboq3ns"]
+
+[ext_resource type="PackedScene" uid="uid://1mrc3rmntp7v" path="res://Scene/Wall1.tscn" id="1_7oylr"]
+[ext_resource type="PackedScene" uid="uid://dpa31v0aadbv8" path="res://Scene/Rock1.tscn" id="2_kna0g"]
+
+[node name="Task1" type="Node2D"]
+
+[node name="MapWall" type="Node" parent="."]
+
+[node name="WallMap" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 688)
+
+[node name="WallMap2" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(96, 688)
+
+[node name="WallMap3" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(160, 688)
+
+[node name="WallMap4" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(224, 688)
+
+[node name="WallMap5" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(288, 688)
+
+[node name="WallMap6" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(352, 688)
+
+[node name="WallMap7" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(416, 688)
+
+[node name="WallMap8" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(480, 688)
+
+[node name="WallMap9" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(544, 688)
+
+[node name="WallMap10" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(608, 688)
+
+[node name="WallMap11" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(672, 688)
+
+[node name="WallMap12" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(736, 688)
+
+[node name="WallMap13" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(800, 688)
+
+[node name="WallMap14" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(864, 688)
+
+[node name="WallMap15" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(928, 688)
+
+[node name="WallMap16" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(992, 688)
+
+[node name="WallMap17" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1056, 688)
+
+[node name="WallMap18" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1120, 688)
+
+[node name="WallMap56" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1184, 688)
+
+[node name="WallMap57" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 688)
+
+[node name="WallMap58" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1184, -16)
+
+[node name="WallMap59" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 48)
+
+[node name="WallMap60" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, -16)
+
+[node name="WallMap29" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, -16)
+
+[node name="WallMap30" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(96, -16)
+
+[node name="WallMap31" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(160, -16)
+
+[node name="WallMap32" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(224, -16)
+
+[node name="WallMap33" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(288, -16)
+
+[node name="WallMap34" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(352, -16)
+
+[node name="WallMap35" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(416, -16)
+
+[node name="WallMap36" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(480, -16)
+
+[node name="WallMap37" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(544, -16)
+
+[node name="WallMap38" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(608, -16)
+
+[node name="WallMap39" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(672, -16)
+
+[node name="WallMap40" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(736, -16)
+
+[node name="WallMap41" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(800, -16)
+
+[node name="WallMap42" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(864, -16)
+
+[node name="WallMap43" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(928, -16)
+
+[node name="WallMap44" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(992, -16)
+
+[node name="WallMap45" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1056, -16)
+
+[node name="WallMap46" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1120, -16)
+
+[node name="WallMap19" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 624)
+
+[node name="WallMap20" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 560)
+
+[node name="WallMap21" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 496)
+
+[node name="WallMap22" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 432)
+
+[node name="WallMap23" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 368)
+
+[node name="WallMap24" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 304)
+
+[node name="WallMap25" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 240)
+
+[node name="WallMap26" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 176)
+
+[node name="WallMap27" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(1248, 112)
+
+[node name="WallMap47" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 624)
+
+[node name="WallMap48" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 560)
+
+[node name="WallMap49" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 496)
+
+[node name="WallMap50" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 432)
+
+[node name="WallMap51" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 368)
+
+[node name="WallMap52" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 304)
+
+[node name="WallMap53" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 240)
+
+[node name="WallMap54" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 176)
+
+[node name="WallMap55" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 112)
+
+[node name="WallMap61" parent="MapWall" instance=ExtResource("1_7oylr")]
+position = Vector2(32, 48)
+
+[node name="WallPlatform" type="Node" parent="."]
+
+[node name="Wall1" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(672, 488)
+
+[node name="Wall2" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(736, 488)
+
+[node name="Wall3" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(800, 488)
+
+[node name="Wall4" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(608, 360)
+
+[node name="Wall5" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(544, 360)
+
+[node name="Wall6" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(480, 360)
+
+[node name="Wall7" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(416, 360)
+
+[node name="Wall8" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(352, 360)
+
+[node name="Wall9" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(352, 232)
+
+[node name="Wall10" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(288, 232)
+
+[node name="Wall11" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(224, 232)
+
+[node name="Wall12" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(160, 232)
+
+[node name="Wall13" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(96, 232)
+
+[node name="Wall14" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(1056, 232)
+
+[node name="Wall19" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(1120, 232)
+
+[node name="Wall20" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(1184, 232)
+
+[node name="Wall15" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(992, 232)
+
+[node name="Wall16" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(928, 232)
+
+[node name="Wall17" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(864, 232)
+
+[node name="Wall18" parent="WallPlatform" instance=ExtResource("1_7oylr")]
+position = Vector2(799, 232)
+
+[node name="Rock" type="Node" parent="."]
+
+[node name="Rock1" parent="Rock" instance=ExtResource("2_kna0g")]
+position = Vector2(289, 633)
+
+[node name="Rock2" parent="Rock" instance=ExtResource("2_kna0g")]
+position = Vector2(353, 305)
+
+[node name="Rock3" parent="Rock" instance=ExtResource("2_kna0g")]
+position = Vector2(1121, 633)
