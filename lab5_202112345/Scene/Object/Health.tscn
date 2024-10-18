@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c66qbglm3fhfc"]
 
 [ext_resource type="SpriteFrames" uid="uid://dwe3a702nrjsr" path="res://Anim/Health.tres" id="1_hftp6"]
-[ext_resource type="Script" path="res://Scene/Object/Health.gd" id="1_ta8ge"]
+[ext_resource type="Script" path="res://Scripts/Health.gd" id="1_ta8ge"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xqrgw"]
 radius = 160.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ci145t24ylvlo"]
+[gd_scene load_steps=8 format=3 uid="uid://ci145t24ylvlo"]
 
 [ext_resource type="PackedScene" uid="uid://6cjmg2b4pqbd" path="res://Scene/Object/Player.tscn" id="1_j6c8t"]
 [ext_resource type="PackedScene" uid="uid://1mrc3rmntp7v" path="res://Scene/Object/Wall1.tscn" id="2_hoa33"]
@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://cgurdmsiyksr8" path="res://Scene/Object/UI.tscn" id="4_sd1as"]
 [ext_resource type="PackedScene" uid="uid://co1ar420qf8xp" path="res://Scene/Object/Coin.tscn" id="5_ryhia"]
 [ext_resource type="PackedScene" uid="uid://c66qbglm3fhfc" path="res://Scene/Object/Health.tscn" id="6_yrrsb"]
+[ext_resource type="PackedScene" uid="uid://ciwpfkfhgjmgo" path="res://Scene/Object/Door.tscn" id="7_x23og"]
 
-[node name="Task2" type="Node2D"]
+[node name="Task3" type="Node2D"]
+
+[node name="Door" parent="." instance=ExtResource("7_x23og")]
+position = Vector2(1121, 141)
 
 [node name="Player" parent="." instance=ExtResource("1_j6c8t")]
 position = Vector2(161, 574)

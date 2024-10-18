@@ -1,0 +1,34 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://1c4mjm0jk2v7"]
+
+[ext_resource type="Texture2D" uid="uid://cf2goak80s2xc" path="res://Texture/Spike/impale_1.png" id="1_ivr8t"]
+[ext_resource type="Texture2D" uid="uid://bc8lffok2tml7" path="res://Texture/Spike/impale_2.png" id="2_iw623"]
+[ext_resource type="Texture2D" uid="uid://cs3ld81ei33vj" path="res://Texture/Spike/impale_3.png" id="3_ki0du"]
+[ext_resource type="Texture2D" uid="uid://blben7fngbkmr" path="res://Texture/Spike/impale_4.png" id="4_8odc0"]
+[ext_resource type="Texture2D" uid="uid://b2sct37qxsp7s" path="res://Texture/Spike/impale_5.png" id="5_emcrq"]
+[ext_resource type="Texture2D" uid="uid://2how8vfuw6wo" path="res://Texture/Spike/impale_6.png" id="6_luxob"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ivr8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_iw623")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ki0du")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8odc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_emcrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_luxob")
+}],
+"loop": true,
+"name": &"Main",
+"speed": 10.0
+}]

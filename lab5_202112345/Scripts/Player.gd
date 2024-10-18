@@ -11,18 +11,31 @@ var vertical_velocity = 0.0  # Vertical speed (gravity, jumping, falling)
 # Reference to UI labels
 var health_label: Label
 var points_label: Label
+var winLose_panel: Panel
+var winLose_label: Label
 
 func _ready():
 	# Get the UI labels from the scene
 	health_label = get_node("../CanvasLayer/UI/HealthLabel")
 	points_label = get_node("../CanvasLayer/UI/PointsLabel")
+	winLose_panel = get_node("../CanvasLayer/UI/WinLosePanel")
+	winLose_label = get_node("../CanvasLayer/UI/WinLosePanel/WinLoseLabel")
 
 	# Update the UI initially
 	update_ui()
 
 func _process(delta):
-	handle_movement(delta)
-	handle_gravity_and_jump(delta)
+	if (Global.stopGame == true && Global.health > 0):
+		pass
+	elif (Global.health <= 0):
+		update_ui()
+		Global.stopGame = true
+		winLose_label.text = "YOU LOSE"
+		winLose_panel.visible = true
+		Global.stopGame = true
+	elif (Global.stopGame == false && Global.health > 0):
+		handle_movement(delta)
+		handle_gravity_and_jump(delta)
 
 # Function to handle player movement (horizontal)
 func handle_movement(delta):
@@ -60,23 +73,3 @@ func handle_gravity_and_jump(delta):
 func update_ui():
 	health_label.text = str(Global.health)
 	points_label.text = str(Global.points)
-
-# Function to simulate taking damage
-func take_damage(amount):
-	Global.health -= amount
-	if Global.health < 0:
-		Global.health = 0  # Prevent health from going negative
-	update_ui()  # Update UI after taking damage
-
-# Function to simulate collecting points
-func collect_points(amount):
-	Global.points += amount
-	update_ui()  # Update UI after collecting points
-
-func collect_health(amount):
-	if (Global.health < 100):
-		if (Global.health + amount > 100):
-			Global.health = 100
-		else:
-			Global.health += amount
-	update_ui()  # Update UI after collecting points

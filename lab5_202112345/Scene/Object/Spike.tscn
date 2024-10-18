@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5i2rgbjmeve1"]
+
+[ext_resource type="Script" path="res://Scripts/Spike.gd" id="1_8bj4j"]
+[ext_resource type="SpriteFrames" uid="uid://1c4mjm0jk2v7" path="res://Anim/Spike.tres" id="1_c7kyc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s0u4k"]
+radius = 35.0
+
+[node name="Spike" type="Area2D"]
+script = ExtResource("1_8bj4j")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_c7kyc")
+animation = &"Main"
+autoplay = "Main"
+frame_progress = 0.671423
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_s0u4k")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+
+[node name="HurtTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="HurtTimer" to="." method="_on_hurt_timer_timeout"]

@@ -1,0 +1,42 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://dkcx86lf7gja7"]
+
+[ext_resource type="Texture2D" uid="uid://dorh4pxk01fqf" path="res://Texture/Mob/Goblin/run001.png" id="1_82054"]
+[ext_resource type="Texture2D" uid="uid://c3r8tu463xjet" path="res://Texture/Mob/Goblin/run002.png" id="2_im2ub"]
+[ext_resource type="Texture2D" uid="uid://b83bnk0x45qpw" path="res://Texture/Mob/Goblin/run003.png" id="3_gt3of"]
+[ext_resource type="Texture2D" uid="uid://bag6gu18285di" path="res://Texture/Mob/Goblin/run004.png" id="4_ifobs"]
+[ext_resource type="Texture2D" uid="uid://cbis3bt43n03c" path="res://Texture/Mob/Goblin/run005.png" id="5_h8hhi"]
+[ext_resource type="Texture2D" uid="uid://bebsln0kscgmk" path="res://Texture/Mob/Goblin/run006.png" id="6_nmhkt"]
+[ext_resource type="Texture2D" uid="uid://c1mv42ufqxtu0" path="res://Texture/Mob/Goblin/run007.png" id="7_amtbv"]
+[ext_resource type="Texture2D" uid="uid://cjrwb134svjpw" path="res://Texture/Mob/Goblin/run008.png" id="8_m7ir6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_82054")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_im2ub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gt3of")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ifobs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_h8hhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nmhkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_amtbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m7ir6")
+}],
+"loop": true,
+"name": &"Main",
+"speed": 5.0
+}]
