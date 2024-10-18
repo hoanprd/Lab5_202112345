@@ -5,10 +5,6 @@ const SPEED = 200          # Speed for horizontal movement
 const JUMP_FORCE = -600    # Jump force (negative because Y-axis goes down)
 const GRAVITY = 900        # Gravity applied when the player is in the air
 
-# Variables for player's health and points
-var health = 100
-var points = 0
-
 # Variable to handle vertical velocity
 var vertical_velocity = 0.0  # Vertical speed (gravity, jumping, falling)
 
@@ -62,17 +58,25 @@ func handle_gravity_and_jump(delta):
 
 # Function to update the UI
 func update_ui():
-	health_label.text = "Health: " + str(health)
-	points_label.text = "Points: " + str(points)
+	health_label.text = str(Global.health)
+	points_label.text = str(Global.points)
 
 # Function to simulate taking damage
 func take_damage(amount):
-	health -= amount
-	if health < 0:
-		health = 0  # Prevent health from going negative
+	Global.health -= amount
+	if Global.health < 0:
+		Global.health = 0  # Prevent health from going negative
 	update_ui()  # Update UI after taking damage
 
 # Function to simulate collecting points
 func collect_points(amount):
-	points += amount
+	Global.points += amount
+	update_ui()  # Update UI after collecting points
+
+func collect_health(amount):
+	if (Global.health < 100):
+		if (Global.health + amount > 100):
+			Global.health = 100
+		else:
+			Global.health += amount
 	update_ui()  # Update UI after collecting points

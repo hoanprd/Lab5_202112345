@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgurdmsiyksr8"]
+
+[ext_resource type="Texture2D" uid="uid://cj7g2ekgjnbwr" path="res://Texture/love-shield.png" id="1_8ks76"]
+[ext_resource type="Texture2D" uid="uid://6poqds66duyg" path="res://Texture/Coin/coin_01.png" id="1_jvwq3"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1278.0
+offset_bottom = 719.0
+
+[node name="HealthSprite" type="Sprite2D" parent="."]
+position = Vector2(28, 23)
+scale = Vector2(0.139963, 0.139963)
+texture = ExtResource("1_8ks76")
+
+[node name="HealthLabel" type="Label" parent="."]
+modulate = Color(0.96, 0, 0.0159998, 1)
+layout_mode = 0
+offset_left = 59.0
+offset_right = 345.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 38
+text = "100"
+
+[node name="PointSprite" type="Sprite2D" parent="."]
+position = Vector2(1254, 24)
+texture = ExtResource("1_jvwq3")
+
+[node name="PointsLabel" type="Label" parent="."]
+modulate = Color(1, 0, 0.0166664, 1)
+layout_mode = 0
+offset_left = 1001.0
+offset_right = 1212.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 38
+text = "0"
+horizontal_alignment = 2
