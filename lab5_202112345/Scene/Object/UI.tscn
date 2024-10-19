@@ -68,3 +68,8 @@ offset_bottom = 721.0
 position = Vector2(640.111, 359.75)
 scale = Vector2(0.554591, 0.555941)
 texture = ExtResource("3_mrdft")
+
+[node name="ExitGameTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="ExitGameTimer" to="." method="_on_exit_game_timer_timeout"]
